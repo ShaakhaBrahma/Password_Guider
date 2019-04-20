@@ -1,0 +1,33 @@
+<html>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<body>
+<h2> html forms</h2>
+<form  method="POST" class="pure-form pure-form-stacked">{% csrf_token %}
+    <fieldset><div class="pure-control-group">
+first name:<br>
+<input type="text" name="firstname" value="">
+<br>
+last name:<br>
+<input type="text" name="lastname" value="">
+<br>
+middle name:<br>
+<input type="text" name="middlename" value="">
+<br>
+email:<br>
+<input type="text" name="email" value="">
+<br>
+phone number:<br>
+<input type="text" name="phonenumber" value="">
+<br>
+place:<br>
+<input type="text" name="place" value="">
+<br>
+date of birth:<br>
+<input type="text" name="dateofbirth" value="">
+<br>
+<br>
+<input type="submit" value="submit" class="pure-button pure-button-primary" align="right">
+        </div> </fieldset>
+</form>
+</body>
+</html>
