@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from cryptography.fernet import Fernet
 
 # Create your views here.
 def view(request):
@@ -14,8 +15,13 @@ def view(request):
 		place = request.POST.get('place')
 		dateofbirth = request.POST.get('dateofbirth')
 		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
+		encrypted=[]
+		key = Fernet.generate_key()
+		for message in listofdata :
+			f = Fernet(key)
+			encrypted.append(f.encrypt(message))
 		basefile=open("base.txt", 'w')
-		for item in listofdata:
+		for item in encrypted:
 			basefile.write(item)
 			basefile.write('\n')
 		#basefile.save()
