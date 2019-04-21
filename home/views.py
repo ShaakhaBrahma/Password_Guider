@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from cryptography.fernet import Fernet
-
+key = Fernet.generate_key()
+f = Fernet(key)
 # Create your views here.
 def view(request):
 	if request.method=="GET":
@@ -16,14 +17,14 @@ def view(request):
 		dateofbirth = request.POST.get('dateofbirth')
 		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
 		encrypted=[]
-		key = Fernet.generate_key()
+		
 		for message in listofdata :
-			f = Fernet(key)
-			encrypted.append(f.encrypt(message))
-		basefile=open("base.txt", 'w')
+			
+			encrypted.append(f.encrypt(message.encode()))
+		basefile=open("base.txt", 'wb')
 		for item in encrypted:
 			basefile.write(item)
-			basefile.write('\n')
+			basefile.write(bytes('\n'.encode()))
 		#basefile.save()
 		basefile.close()	
 		return redirect('home:display')
@@ -31,9 +32,11 @@ def view(request):
 def display(request):
 			if request.method =="GET":
 				items=[]
-				basefile=open("base.txt", 'r')
+				basefile=open("base.txt", 'rb')
 				for item in basefile:
-					items.append(item)
+					x=f.decrypt(item)
+					items.append(x.decode())
+
 				context = {'items': items}
 				return render(request, "display.html", context)
 			
