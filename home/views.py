@@ -15,17 +15,15 @@ def view(request):
 		email = request.POST.get('email')
 		place = request.POST.get('place')
 		dateofbirth = request.POST.get('dateofbirth')
-		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
+		listofdata=[firstname, middlename, lastname, phonenumber, email, place, dateofbirth]
 		encrypted=[]
 		
 		for message in listofdata :
-			
 			encrypted.append(f.encrypt(message.encode()))
 		basefile=open("base.txt", 'wb')
 		for item in encrypted:
 			basefile.write(item)
 			basefile.write(bytes('\n'.encode()))
-		#basefile.save()
 		basefile.close()	
 		return redirect('home:display')
 
@@ -36,7 +34,6 @@ def display(request):
 				for item in basefile:
 					x=f.decrypt(item)
 					items.append(x.decode())
-
 				context = {'items': items}
 				return render(request, "display.html", context)
 			
