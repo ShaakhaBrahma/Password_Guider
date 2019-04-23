@@ -30,4 +30,6 @@ def display(request):
 					items.append(item)
 				context = {'items': items}
 				return render(request, "display.html", context)
-			
+			if request.method == "POST":
+				password = request.POST.get('password')
+				#checkForStrength(password)
