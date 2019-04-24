@@ -10,10 +10,14 @@
     {% endfor %}
 </div>
     <div>
-        <form method="post">
+        <form method="post" >
+            {% csrf_token %}
             <label>Password</label>
-            <input type="text" name="password" required="true" placeholder="password">
+            <input type="password" name="password" required="true" placeholder="password">
+
+            <button type="submit">submit</button>
         </form>
     </div>
+{{ item }}
 </body>
 </html>
