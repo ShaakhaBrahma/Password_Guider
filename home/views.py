@@ -33,3 +33,5 @@ def display(request):
 			if request.method == "POST":
 				password = request.POST.get('password')
 				#checkForStrength(password)
+				return render(request, "display.html")
+            
