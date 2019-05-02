@@ -32,6 +32,11 @@ def display(request):
 				return render(request, "display.html", context)
 			if request.method == "POST":
 				password = request.POST.get('password')
+				items=[]
+				basefile=open("base.txt", 'r')
+				for item in basefile:
+					items.append(item)
+				context = {'items': items,'item':password}
 				#checkForStrength(password)
-				return render(request, "display.html", context={"item":password})
+				return render(request, "display.html", context)
             
