@@ -19,7 +19,7 @@ def view(request):
 		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
 		encrypted=[]
 		basefile=open("base.txt", 'wb')
-		proxy=open("proxy.txt",'w')
+		proxy=open("proxy.txt",'a')
 		for item in listofdata:
 			proxy.write(item)
 			proxy.write('\n')
@@ -39,17 +39,22 @@ def display(request):
 
 				for item in basefile:
 					x=f.decrypt(item)
-					items.append(str(x))
-				list0fpass=[items[0][:-1]+'@123',items[0][:-1]+'@'+items[6][:4],items[0][:-1]+'@'+items[3][:5]]
+					x=x.decode('utf-8')
+					x=str(x)
+					items.append(x)
+				list0fpass=[items[0].capitalize()+'@123',items[0].capitalize()+'@'+items[6][:4],items[0].capitalize()+'@'+items[3][:5]]
 				context = {'items': items,'passwords':list0fpass}
 				return render(request, "display.html", context)
 			if request.method == "POST":
 				password = request.POST.get('password')
 				items=[]
-				basefile=open("base.txt", 'r')
+				basefile=open("base.txt", 'rb')
 				for item in basefile:
-					items.append(item)
-				list0fpass=[items[0][:-1].capitalize()+'@123',items[0][:-1].capitalize()+'@'+items[6][:4],items[0][:-1]+'@'+items[3][:5]]
+					x=f.decrypt(item)
+					x=x.decode('utf-8')
+					x=str(x)
+					items.append(x)
+				list0fpass=[items[0].capitalize()+'@123',items[0].capitalize()+'@'+items[6][:4],items[0].capitalize()+'@'+items[3][:5]]
 				
 				#checkForStrength(password)
 				x=True
