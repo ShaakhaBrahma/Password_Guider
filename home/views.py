@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 import re
-import cryptography.fernet import Fernet
+from cryptography.fernet import Fernet
 key = Fernet.generate_key()
 f=Fernet(key)
 # Create your views here.
@@ -17,7 +17,7 @@ def view(request):
 		place = request.POST.get('place')
 		dateofbirth = request.POST.get('dateofbirth')
 		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
-		encrypted
+		encrypted=[]
 		basefile=open("base.txt", 'wb')
 		proxy=open("proxy.txt",'w')
 		for item in listofdata:
@@ -28,16 +28,18 @@ def view(request):
 			encrypted.append(f.encrypt(message.encode()))
 		for item in encrypted:
 			basefile.write(item)
-			basefile.write(bytes('\n'.encode())))
+			basefile.write(bytes('\n'.encode()))
 		basefile.close()	
 		return redirect('home:display')
 
 def display(request):
 			if request.method =="GET":
 				items=[]
-				basefile=open("base.txt", 'r')
+				basefile=open("base.txt", 'rb')
+
 				for item in basefile:
-					items.append(item)
+					x=f.decrypt(item)
+					items.append(str(x))
 				list0fpass=[items[0][:-1]+'@123',items[0][:-1]+'@'+items[6][:4],items[0][:-1]+'@'+items[3][:5]]
 				context = {'items': items,'passwords':list0fpass}
 				return render(request, "display.html", context)
