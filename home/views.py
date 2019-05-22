@@ -63,7 +63,7 @@ def display(request):
 					check=False
 
 				while x:
-					if (len(password)>6 and len(password)<12) and re.search("[a-z]",password) and re.search("[A-Z]",password) and re.search("[0-9]",password) and re.search("[!@#$%^&_]",password) and check==True:
+					if (len(password)>6 and len(password)<15) and re.search("[a-z]",password) and re.search("[A-Z]",password) and re.search("[0-9]",password) and re.search("[!@#$%^&_]",password) and check==True:
 						break
 					else:
 						x=False
