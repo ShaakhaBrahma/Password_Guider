@@ -1,26 +1,146 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
 <html>
-<head>
-<title></title>
-</head>
-<body>
-<div>
-<p>these are the predicted passwords</p>
-{%for i in items %}
-<li>{{i}}</li>
-    {% endfor %}
-    {%for i in passwords %}
-    <li>{{i}}</li>
-        {% endfor %}
-</div>
-    <div>
-        <form method="post" >
-            {% csrf_token %}
-            <label>Password</label>
-            <input type="password" name="password" required="true" placeholder="password">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>2 Column Layout &mdash; Left Menu with Header &amp; Footer</title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+			}
+			
+			#header {
+				background: #ccc;
+				height: 100px;
+			}
+			
+			#header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+			
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 230px;
+				margin-left: -100%;
+				background: #eee;
+			}
+			
+			#footer {
+				clear: left;
+				width: 100%;
+				background: #ccc;
+				text-align: center;
+				padding: 4px 0;
+			}
+	
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+			.innertube {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #555;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav ul a {
+				color: darkgreen;
+				text-decoration: none;
+			}
+		
+		</style>
+		
+		
+	
+	</head>
+	
+	<body>		
 
-            <button type="submit">submit</button>
-        </form>
-    </div>
-{{ boolean }}
-</body>
+		<header id="header">
+			<div class="innertube">
+				<h1>The list of predicted passwords</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h1>checkout your mistakes</h1>
+						<p>
+                            {%for i in items %}
+                            <li>{{i}}</li>
+                            {% endfor %}
+                                {%for i in passwords %}
+                                    <li>{{i}}</li>
+                            {% endfor %}
+                        </p>
+					</div>
+				</div>
+                <div id="content">
+                    <div class="innertube">
+                    <form method="post" >
+                        {% csrf_token %}
+                        <label><b> Try your new Password's strength:</b></label>
+                        <br>
+                             <input type="password" name="password" required="true" placeholder="password">
+                            <br>
+                            <button type="submit">submit</button>
+                            </form>    
+                    </div></div>
+                <div id="content">
+                    <div class="innertube">
+                <p>Your new password is:<b>{{boolean}}</b></p>
+                    </div></div>
+			</main>
+			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Blog links for passwords security</h3>
+					<ul>
+						<li><a href="https://blog.mozilla.org/internetcitizen/2017/01/25/better-password-security/">Guidelines by Mozilla</a></li>
+						<li><a href="https://support.google.com/accounts/answer/9231944?hl=en">Guidlines by Google</a></li>
+						<li><a href="https://www.sans.org/security-awareness-training/blog/security-awareness-topic-6-passwords">Security awareness by sans</a></li>
+					</ul>
+					
+				</div>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>For people security, By internet activists</p>
+			</div>
+		</footer>
+	
+	</body>
 </html>

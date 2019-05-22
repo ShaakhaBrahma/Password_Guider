@@ -1,9 +1,10 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 <body>
-<h2> html forms</h2>
+<center><h1>Password Guider</h1></center>
 <form  method="POST" class="pure-form pure-form-stacked">{% csrf_token %}
-    <fieldset><div class="pure-control-group">
+ <center>   <fieldset><div class="pure-control-group">
+        <p>Enter your details</p>
 first name:<br>
 <input type="text" name="firstname" value="">
 <br>
@@ -26,8 +27,8 @@ date of birth:<br>
 <input type="date" name="dateofbirth" value="">
 <br>
 <br>
-<input type="submit" value="submit" class="pure-button pure-button-primary" align="right">
-        </div> </fieldset>
+<input type="submit" value="submit"class="pure-button pure-button-primary"  align="right">
+ </div> </fieldset></center>
 </form>
 </body>
 </html>

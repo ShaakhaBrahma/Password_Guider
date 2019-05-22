@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7e08d12-8fc0-4f65-83ac-d92f7dae3019" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1a725139-ede7-4663-8419-48ae40a14293" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,35 +13,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            <state relative-caret-position="-136">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/templates/homepage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="75" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home/templates/display.html" />
         <option value="$PROJECT_DIR$/home/views.py" />
+        <option value="$PROJECT_DIR$/home/templates/homepage.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="y" value="15" />
+    <option name="x" value="950" />
+    <option name="y" value="55" />
     <option name="width" value="705" />
     <option name="height" value="730" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -54,32 +66,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Password_Guider" type="462c0819:PsiDirectoryNode" />
+              <item name="Password_Guider-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Password_Guider-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Password_Guider" type="462c0819:PsiDirectoryNode" />
+              <item name="Password_Guider-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Password_Guider-master" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Password_Guider" type="462c0819:PsiDirectoryNode" />
+              <item name="Password_Guider-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Password_Guider-master" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Password_Guider" type="462c0819:PsiDirectoryNode" />
-              <item name="password" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Password_Guider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -89,9 +88,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/vocabulary" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -106,8 +104,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Password_Guider" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Password_Guider" />
+    <configuration name="Password_Guider-master" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Password_Guider-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -136,74 +134,40 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a7e08d12-8fc0-4f65-83ac-d92f7dae3019" name="Default Changelist" comment="" />
-      <created>1556077960831</created>
+      <changelist id="1a725139-ede7-4663-8419-48ae40a14293" name="Default Changelist" comment="" />
+      <created>1557381488790</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1556077960831</updated>
-      <workItem from="1556077966535" duration="3486000" />
-      <workItem from="1556101629690" duration="1469000" />
-      <workItem from="1556566342139" duration="857000" />
-      <workItem from="1556815125519" duration="1514000" />
-      <workItem from="1556817297842" duration="494000" />
-      <workItem from="1557299944067" duration="1006000" />
-      <workItem from="1557380565138" duration="83000" />
+      <updated>1557381488790</updated>
+      <workItem from="1557381490134" duration="1184000" />
+      <workItem from="1558008597674" duration="1909000" />
+      <workItem from="1558022529359" duration="5859000" />
     </task>
-    <task id="LOCAL-00001" summary="no much">
-      <created>1556078250164</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1556078250164</updated>
-    </task>
-    <task id="LOCAL-00002" summary="password field added">
-      <created>1556079711002</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1556079711002</updated>
-    </task>
-    <task id="LOCAL-00003" summary="password field added">
-      <created>1556815716144</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1556815716144</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8909000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="8952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08926175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -214,47 +178,26 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="no much" />
-    <MESSAGE value="password field added" />
-    <option name="LAST_COMMIT_MESSAGE" value="password field added" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/templates/display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/password/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#632#664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/templates/homepage.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="75" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="75" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state relative-caret-position="-136">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

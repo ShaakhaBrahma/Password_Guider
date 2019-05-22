@@ -17,12 +17,14 @@ def view(request):
 		place = request.POST.get('place')
 		dateofbirth = request.POST.get('dateofbirth')
 		listofdata=[firstname, lastname, middlename, phonenumber, email, place, dateofbirth]
-		encrypted=[]
-		basefile=open("base.txt", 'wb')
-		proxy=open("proxy.txt",'a')
+		encrypted = []
+		basefile = open("base.txt", 'wb')
+		proxy = open("proxy.txt", 'a')
+		rec=""
 		for item in listofdata:
-			proxy.write(item)
-			proxy.write('\n')
+			rec =rec+item+"|"
+
+		proxy.write(rec+"\n")
 		#basefile.save()
 		for message in listofdata:
 			encrypted.append(f.encrypt(message.encode()))
@@ -67,15 +69,13 @@ def display(request):
 						break
 					else:
 						x=False
-					'''elif re.search("[a-z]",password):
-						break
-					elif re.search("[0-9]",password):
-						break	
-					elif re.search("[A-Z]",password):
-						break
-					elif re.search("[$#@!&^%]",password):
-						break'''
+
+				if x:
+					res="strong";
+				else:
+					res="weak and predictable"
+
 					
-				context = {'items': items,'item':password,'passwords':list0fpass,'boolean':x}
+				context = {'items': items,'item':password,'passwords':list0fpass,'boolean':res}
 				return render(request, "display.html", context)
 #def checkForStrength(passw)            
