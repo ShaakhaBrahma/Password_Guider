@@ -44,7 +44,7 @@ def display(request):
 					x=x.decode('utf-8')
 					x=str(x)
 					items.append(x)
-				list0fpass=[items[0].capitalize()+'@123',items[0].capitalize()+'@'+items[6][:4],items[0].capitalize()+'@'+items[3][:5]]
+				list0fpass=[items[0].capitalize()+'@123',items[0].capitalize()+'@'+items[6][:4],items[0].capitalize()+'@'+items[3][:5]],items[0].capitalize()+'@'+items[3][4:]]
 				context = {'items': items,'passwords':list0fpass}
 				return render(request, "display.html", context)
 			if request.method == "POST":
